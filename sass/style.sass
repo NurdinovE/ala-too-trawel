@@ -1,0 +1,405 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+html
+  scroll-behavior: smooth
+.promo
+  min-height: 650px
+  padding: 24px 0 27px 0
+  background: url("../image/bg_image.png")
+  background-repeat: no-repeat
+  .container
+    .header
+      display: flex
+      justify-content: space-between
+      &__official
+        width: 250px
+        text-align: center
+        color: #ffffff
+        font-size: 12px
+        span
+          margin-top: 7px
+          font-size: 18px
+          display: block
+      &__contacts
+        .header__phone
+          display: block
+          color: #ffffff
+          font-size: 18px
+        .btn
+          margin-top: 7px
+          width: 158px
+          padding: 10px 0
+          background: #C70101
+          border-radius: 5px
+          font-size: 12px
+          text-transform: uppercase
+          color: #ffffff
+          border: none
+          outline: none
+          cursor: pointer
+    .promo__wrapper
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      margin-top: 90px
+      .promo__title
+        font-size: 42px
+        text-transform: uppercase
+        color: #ffffff
+      .promo__subtitle
+        color: #ffffff
+        text-transform: uppercase
+        font-size: 24px
+      .promo__icons
+        width: 425px
+        display: flex
+        justify-content: space-between
+        margin-top: 65px
+        .promo__icon
+          width: 80px
+          color: #ffffff
+          font-size: 14px
+          text-align: center
+      .btn_main
+        margin-top: 65px
+        width: 300px
+        font-size: 16px
+        padding: 18px 0
+        background: #C70101
+        color: #ffffff
+        text-transform: uppercase
+      .promo__link
+        color: #fff
+        font-size: 16px
+        margin-top: 18px
+        a
+          color: #fff
+          font-size: 16px
+          text-decoration: underline
+
+.advantages
+  background: whitesmoke
+  padding: 70px 0
+  .container
+    .advantages__title
+      text-align: center
+      font-size: 30px
+      font-weight: 600
+      margin-bottom: 65px
+
+    .advantages__main
+      display: flex
+      justify-content: space-between
+
+      .advantages__icon
+        text-align: center
+        width: 275px
+        height: 220px
+        .icon__title
+          margin-top: 38px
+          font-size: 18px
+          font-weight: 600
+        .icon__subtitle
+          margin-top: 26px
+          font-size: 14px
+          font-weight: 500
+          span
+            color: red
+            text-decoration: underline
+.check
+  background: url("../image/boots_bg.png") center center/cover no-repeat
+
+  padding: 100px 0 90px 0
+  .container
+    .check__title
+      font-size: 36px
+      color: #fff
+      width: 770px
+    .check__subtitle
+      margin-top: 80px
+      font-size: 20px
+      color: #fff
+      width: 400px
+      margin-bottom: 35px
+    .feed-form
+      input
+        display: block
+        width: 300px
+        height: 50px
+        margin-bottom: 15px
+        border-radius: 5px
+        border: none
+        outline: none
+        padding-left: 20px
+      .btn__check
+        margin-top: 20px
+        width: 300px
+        font-size: 16px
+        padding: 18px 0
+        background: #C70101
+        color: #ffffff
+        text-transform: uppercase
+        font-weight: 500
+.carousel
+  padding: 100px 0
+
+  &__inner
+    position: relative
+    width: 750px
+    margin: 0 auto
+
+    .slick-prev
+      display: inline-block
+      border: none
+      outline: none
+      font-size: 50px
+      color: red
+      background: #ffffff
+      top: 46%
+      transform: translateY(50%)
+      position: absolute
+      left: -66px
+    .slick-next
+      display: inline-block
+      border: none
+      outline: none
+      font-size: 50px
+      color: red
+      background: #ffffff
+      top: 50%
+      transform: translateX(50%)
+      position: absolute
+      right: -66px
+.catalog
+  padding-bottom: 100px
+  .title
+    text-align: center
+  .catalog__tabs
+    display: flex
+    justify-content: center
+    list-style: none
+    align-items:  center
+    .catalog__tab
+      width: 220px
+      height: 50px
+      border: 1px solid #d0d0d0
+      color: #6b6b6b
+      font-size: 18px
+      font-weight: 400
+      text-align: center
+      transform: skewX(-25deg)
+      line-height: 50px
+      margin: 70px 5px 0 5px
+      text-transform: uppercase
+      transition: .5s all
+      cursor: pointer
+      div
+        transform: skewX(25deg )
+    .catalog__tab:hover
+      box-shadow: 3px 3px 28px #C70101
+      border: none
+    .catalog__tab_active
+      background: #C70101
+      color: #ffffff
+      border: none
+  .catalog__content
+    margin-top: 60px
+    display: none
+    flex-wrap: wrap
+  .catalog__content_active
+    display: flex
+    .catalog-item
+      width: 300px
+      min-height: 440px
+      border: 1px solid #8e8e8e
+      padding: 20px 20px 26px 20px
+      margin-right: auto
+
+      .catalog-item__wrapper
+        display: flex
+        width: 200%
+        .catalog-item__content
+          width: 50%
+          margin-right: 0
+          transform: translateX(-200%)
+          display: none
+          .catalog-item__img
+            max-width: 100%
+            height: 200px
+            margin: 0 auto
+            display: block
+          .catalog-item__subtitle
+            text-align: center
+            font-size: 16px
+            font-weight: 700
+            margin-top: 20px
+          .catalog-item__description
+            text-align: center
+            font-size: 14px
+            margin-top: 16px
+          .catalog-item__link
+            text-align: center
+            text-transform: uppercase
+            margin: 17px auto
+            color: #C70101
+            text-decoration: underline
+            display: block
+        .catalog-item__content_active
+          transform: translateX(0)
+          margin-right: 20px
+          display: block
+
+          .catalog-item__img
+            max-width: 100%
+            height: 200px
+            margin: 0 auto
+            display: block
+          .catalog-item__subtitle
+            text-align: center
+            font-size: 16px
+            font-weight: 700
+            margin-top: 20px
+          .catalog-item__description
+            text-align: center
+            font-size: 14px
+            margin-top: 16px
+          .catalog-item__link
+            text-align: center
+            text-transform: uppercase
+            margin: 17px auto
+            color: #C70101
+            text-decoration: underline
+            display: block
+        .catalog-item__list
+          width: 50%
+          margin-left: 20px
+          transform: translateX(0)
+          padding-right: 20px
+          list-style-type: none
+          display: none
+
+          li
+            color: #555
+            font-size: 14px
+            margin-bottom: 20px
+
+            position: relative
+          li:before
+            content: ''
+            width: 5px
+            height: 5px
+            background: #C70101
+            position: absolute
+            left: -14px
+            top: 8px
+        .catalog-item__list_active
+          transform: translateX(-100%)
+          margin-left: 0
+          display: block
+        .catalog-item__back
+          color: #C70101
+          font-size: 14px
+          text-decoration: underline
+          text-transform: uppercase
+          display: block
+          text-align: center
+        .catalog-item__back:hover
+          color: #C70101
+      .catalog-item__footer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .catalog-item__old-price
+          text-decoration: line-through
+          font-size: 14px
+          color: #555
+        .catalog-item__price
+          font-size: 20px
+          font-weight: 700
+        .btn_mini
+          width: 130px
+          margin-top: 7px
+          padding: 10px 0
+          background: #C70101
+          border-radius: 5px
+          text-transform: uppercase
+          color: #ffffff
+          border: none
+          outline: none
+          cursor: pointer
+          font-size: 14px
+.overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  background: #000000
+  display: none
+  .modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: #ecececec
+    width: 420px
+    height: 420px
+    padding: 20px 40px
+
+    .modal__subtitle
+      font-size: 18px
+      text-align: center
+      font-weight: 700
+      margin-bottom: 10px
+    .modal__descr
+      font-size: 14px
+      text-align: center
+      font-weight: 400
+      margin-bottom: 10px
+    .feed-form
+      input
+        display: block
+        width: 300px
+        height: 60px
+        margin-bottom: 15px
+        border-radius: 5px
+        border: none
+        outline: none
+        padding-left: 20px
+      .button_submit
+        margin-top: 20px
+        width: 300px
+        font-size: 16px
+        padding: 18px 0
+        background: #C70101
+        color: #ffffff
+        text-transform: uppercase
+        font-weight: 500
+    .modal__close
+      position: absolute
+      top: 0
+      right: -10px
+      font-size: 40px
+      cursor: pointer
+      padding-right: 10px
+      color: #C70101
+  .modal_mini
+    height: 210px
+    .modal__close
+      position: absolute
+      top: 0
+      right: -10px
+      font-size: 40px
+      cursor: pointer
+      color: #C70101
+
+
+.pageup
+  position: fixed
+  bottom: 40px
+  right: 40px
+  width: 40px
+  height: 40px
+  img
+    width: 100%
